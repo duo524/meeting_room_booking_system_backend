@@ -34,6 +34,13 @@ export class User {
     email: string
 
     @Column({
+        comment: '头像',
+        length: 100,
+        nullable: true
+    })
+    headPic: string;
+
+    @Column({
         comment: '手机号',
         length: 20,
         nullable: true //在数据库中使列NULL或NOT NULL。 默认情况下，列是nullable：false
